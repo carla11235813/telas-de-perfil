@@ -105,7 +105,6 @@ html, body {
 
 /* -------------- PERFIL ---------------- */
 .container-perfil {
-    padding-inline: 30px;
     height: 100%;
     width: 100vw;
     display: flex;
@@ -113,8 +112,23 @@ html, body {
     justify-content: space-between;
 }
 
+.perfil-config { /* -------------------------------- */
+    background-color: #a5a0a097;
+    padding: 50px 63px 50px 29px;
+    height: 488px;
+} 
+
+.perfil-config ul {
+    margin: 0;
+
+}
+
 .perfil-config ul li {
     padding-block: 20px;
+}
+
+.perfil-config ul li:hover{ /* -------------------------------- */
+    background-color: #08244c72;
 }
 
 .perfil-config ul li a h5 {
@@ -135,6 +149,7 @@ html, body {
 }
 
 .perfil-info .frame1 {
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -148,13 +163,18 @@ html, body {
 
 .perfil-info .frame2 {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
-.perfil-info .frame2 .lin {
-    margin-top: 30px    ;
-    display: flex;
-    justify-content: space-between;
+.perfil-info .frame2 .lin div {
+    margin-top: 30px;
+}
+
+.perfil-info .frame2 .lin p {
+    border-radius: 7px;
+    text-align: center;
+    background-color: #999595c3;
+    padding: 10px 30px;
 }
 
 /* FOOTER */
