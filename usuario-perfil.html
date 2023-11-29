@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Usuário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!---------------- CABEÇALHO ---------------->
+    <header id="headerFather">
+        <nav class="navbar navbar-expand-sm navbarBg">
+            <div class="container" id="divPaiNav">
+                <a href="#" 
+                class="logo navbar-brand d-flex">
+                    <img src="img/campus-store-logo.png" alt="" class="logo-img">
+                    <img src="img/campus-store.png" alt="" class="logo-txt">
+                </a>
+                <button type="button" class="hamburger-menu navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               <div class="collapse navbar-collapse " id="menuNavbar">
+                    <div class="navbar-nav" id="navPai">
+                        <div id="redimencionarBarrapesquisa"></div>
+                        <span id="divAcimaBarrapesquisa"></span>
+                        <a href="#"class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Produtos</a>
+                        <a href="#" class="nav-link">Vendedores</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categoria</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">produto 1</a></li>
+                            <li><a href="#" class="dropdown-item">produto 2</a></li>
+                            <li><a href="#" class="dropdown-item">produto 3</a></li>
+                            <li><a href="#" class="dropdown-item">produto 4</a></li>
+                            <li><a href="#" class="dropdown-item">produto 5</a></li>
+                            </ul>
+                        </div>
+                        <div id="redimencionar"></div>
+                        <span id="divAcima"></span>
+                    </div>  
+                </div>
+                <div id="redimencionar3"></div>
+                <span id="divAcima3"></span>
+                <div id="redimencionar2"></div>
+                <span id="divAcimaNavPai"></span>
+            </div>
+        </nav>
+        <nav id="redimencionar4"></nav>
+        <span id="navAcima"></span>
+    </header>
+
+
+    <!-------------- PERFIL ---------------->
+    <div class="container-perfil">
+        <div class="perfil-config">
+            <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                  </svg><h5>Perfil</h5></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                  </svg><h5>Favoritos</h5></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg><h5>Compras</h5></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                  </svg><h5>Configurações</h5></a></li>
+            </ul>
+        </div>
+        <div class="perfil-info">
+            <div class="frame1">
+                <div class="img-perfil">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvCL0G6SXCKHRBQUqlEWV_KWFr8J0y-JNKFhHZIoeHUfDMxdd43aIyb5dzKz_McNDzoQ&usqp=CAU" alt="c3po">
+                </div>
+
+                <div>
+                    <h2>Nome Sobrenome</h2>
+                    <a href="#">Editar</a>
+                </div>
+            </div>
+            <div class="frame2">
+                <div class="lin">
+                    <div class="text">
+                        <h5>Nome:</h5>
+                        <p>nome</p>
+                    </div>
+                    <div class="text">
+                        <h5>Sobrenome:</h5>
+                        <p>sobrenome</p>
+                    </div>
+                </div>
+                <div class="lin">
+                    <div class="text">
+                        <h5>E-mail:</h5>
+                        <p>email@gmail.com</p>
+                    </div>
+                    <div class="text">
+                        <h5>Telefone:</h5>
+                        <p>(11) 94002-8922</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-perfil">
+        <div class="opcoes">
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-user"></i> Perfil</a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i> Favoritos</a></li>
+                <li><a href="#"><i class="fa-regular fa-credit-card"></i> Formas de Pagamentos</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Compras</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+            </ul>
+        </div>
+
+        <div class="info-perfil">
+            <div class="img-dados">
+                <div class="img-perfil">
+                    <img src="https://i.pinimg.com/564x/03/95/fe/0395fef55faf02b90379bf136251c284.jpg" alt="Foto de perfil">
+                </div>
+                <div>
+                    <h2>Ahsoka Tano</h2>
+                    <a href="#">Mudar senha</a>
+                </div>
+            </div>
+            <div class="dados-perfil">
+                <p>Nome</p>
+                <p>Sobrenome</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-------------- FOOTER ---------------->
+    <footer class="container-fluid p3" id="footer">
+
+        <div class="linha">
+            <div class="row justify-content-around text-center text-md-start">
+                <div class="col-md-3 footer_coisa">
+                    <h4>Dê asas ao seu negócio com <br> OwlFlight</h4>
+                </div>
+                <div class="col-md-2 footer_coisa">
+                    <ul class="list-unstyled">
+                        <li><h4>Contato</h4></li>
+                        <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f mx-3 fa-1x footer_icon"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram mx-3 fa-1x footer_icon"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in mx-3 fa-1x footer_icon"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube mx-3 fa-1x footer_icon"></i></a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer_coisa">
+                    <ul class="list-unstyled">
+                        <li><h4>Suporte</h4></li>
+                        <li><a href="#" class="text-decoration-none">Ouvidoria</a></li>
+                        <li><a href="#" class="text-decoration-none">Planos</a></li>
+                        <li><a href="#" class="text-decoration-none">Formas de <br> pagameto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer_coisa">
+                    <ul class="list-unstyled">
+                        <li><h4>Conheça-nos</h4></li>
+                        <li><a href="#" class="text-decoration-none">Sobre-nós</a></li>
+                        <li><a href="#" class="text-decoration-none">Nossa equipe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center pt-2">
+                <p>&copy; 2023 Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="myJS.js"></script>
+</body>
+</html>
