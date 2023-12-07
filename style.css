@@ -265,6 +265,10 @@ nav {
     border-radius: 7px;
 }
 
+.parceiros h2 {
+    padding-left: 60px;
+}
+
 .img-parceiros {
     margin-left: 15px;
 }
@@ -424,6 +428,10 @@ nav {
     .img-parceiros img {
         min-width: 70px;
         height: 70px;
+    }
+
+    .parceiros h2 {
+    padding-left: 15px;
     }
 }
 
